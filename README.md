@@ -14,12 +14,7 @@ To create my Outcomes Based on Launch Date chart, I started by adding a years fu
 
 =YEAR(cell)
 
-This equation allowed me to determine the year that the campaign was created. My next step was to create a pivot table in the next sheet, that showed successful, failed, and canceled fundraisers by month. 
-
-Parent CategorytheaterYears(All)Count of outcomesColumn LabelsRow LabelssuccessfulfailedcanceledGrand TotalJan5633796Feb71393113Mar5633392Apr71402113May111523166Jun100494153Jul87501138Aug72474123Sep5934497Oct6550115Nov5431388Dec3735375Grand Total839493371369
-
-
-The pivot table was filtered to only display theater fundraisers. I then created a line chart using the data from the pivot table, which allowed me to see the relationship between the month of the year a campaign was launched and the outcome of the campaign.
+This equation allowed me to determine the year that the campaign was created. My next step was to create a pivot table in the next sheet, that showed successful, failed, and canceled fundraisers by month. The pivot table was filtered to only display theater fundraisers. I then created a line chart using the data from the pivot table, which allowed me to see the relationship between the month of the year a campaign was launched and the outcome of the campaign.
 
 ### Analysis of Outcomes Based on Goals
 
@@ -64,4 +59,5 @@ One limitation of this data set is that it does not include a mean donation, jus
 - What are some other possible tables and/or graphs that we could create?
 
 Another graph you could create with this data set is a graph showing the number of backers over the duration of a fundraiser to see if there is any crucial time period that the fundraiser is gaining more momentum with a larger number of donors. 
+
 
