@@ -10,11 +10,30 @@ The purpose of this project is to compare different fundraising projects based o
 
 ### Analysis of Outcomes Based on Launch Date
 
+To create my Outcomes Based on Launch Date chart, I started by adding a “years” function to my Kickstarter sheet.
+
+=YEAR(cell)
+
+This equation allowed me to determine the year that the campaign was created. My next step was to create a pivot table in the next sheet, that showed successful, failed, and canceled fundraisers by month. The pivot table was filtered for to only display theater fundraisers. I then created a line chart using the data from the pivot table, which allowed me to see the relationship between the month of the year a campaign was launched and the outcome of the campaign.
+
 ### Analysis of Outcomes Based on Goals
+
+For the chart inspecting the relationship between outcomes and goals, I started by adding the columns 
+
+Goal
+Number Successful
+Number Failed
+Number Canceled
+Total Projects
+Percentage Successful
+Percentage Failed
+Percentage Canceled
+
+After adding these columns, I created dollar amount ranges for each of the goals. I then used the COUNTIFS function to populate the sheet with filter the Kickstarter by "Number Successful," "Number Failed," and "Number Canceled,” and filtered the sheet by monetary ranges and the subcategory plays. Finally, I used the SUM function to calculate the total projects for each monetary range, and then divided the number successful, number failed, and number canceled by the total to find the percent successful, percent failed, and the percent canceled. I then used this information to create a line chart, comparing this information.
 
 ### Challenges and Difficulties Encountered
 
-The only challenge I faced during this process was I was trying to apply a calculation to a page that I filtered before without filtering it on an equation. My calculations did not work because of this. I inspected every element to see why my graph was not picking up on certain values and realized that the filtering needed to be done on a separate page. (add)
+The only challenge I faced during this process was while using the COUNTIFS function, I did not realize that you had to filter the equation for plays and not just have the filter on in the Kickstarter sheet. I could not figure out why the number of canceled plays was not zero. I eventually realized that the filter on the sheet does not apply to the output of the COUNTIF function.
 
 
 ## Results
@@ -32,5 +51,6 @@ From the outcomes based on goals chart, I can conclude that very small fundraisi
 One limitation of this data set is that it does not include a mean donation, just an average. This could impact the data available because fundraising techniques that are most effective might not be able to be properly inferred. There could be many situations where someone could be hosting a fundraiser and most people donate a relatively small amount, but one person donates most of the money. This might not be as useful as having information on a large number of smaller contributions, which could not be understood through an average of the donation amount. 
 
 - What are some other possible tables and/or graphs that we could create?
+
 Another graph you could create with this data set is a graph showing the number of backers over the duration of a fundraiser to see if there is any crucial time period that the fundraiser is gaining more momentum with a larger amount of donors. 
 
